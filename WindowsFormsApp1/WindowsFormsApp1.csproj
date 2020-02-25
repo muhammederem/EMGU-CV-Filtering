@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{950C5BFD-D797-4E86-838F-68C2271CF753}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV.UI, Version=4.1.0.3420, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EMGU.CV.4.1.0.3420\lib\net35\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=4.1.0.3420, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EMGU.CV.4.1.0.3420\lib\net35\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyBilateral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyBilateral.Designer.cs">
+      <DependentUpon>ApplyBilateral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyBoxFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyBoxFilter.Designer.cs">
+      <DependentUpon>ApplyBoxFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyLaplacian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyLaplacian.Designer.cs">
+      <DependentUpon>ApplyLaplacian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyMedianBlur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyMedianBlur.Designer.cs">
+      <DependentUpon>ApplyMedianBlur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyMorpho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyMorpho.Designer.cs">
+      <DependentUpon>ApplyMorpho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyScharr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyScharr.Designer.cs">
+      <DependentUpon>ApplyScharr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplySobel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplySobel.Designer.cs">
+      <DependentUpon>ApplySobel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplySpatial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplySpatial.Designer.cs">
+      <DependentUpon>ApplySpatial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeanShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeanShift.Designer.cs">
+      <DependentUpon>MeanShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="filter2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filter2D.Designer.cs">
+      <DependentUpon>filter2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Smooth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smooth.Designer.cs">
+      <DependentUpon>Smooth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SquareBoxFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SquareBoxFilter.Designer.cs">
+      <DependentUpon>SquareBoxFilter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApplyBilateral.resx">
+      <DependentUpon>ApplyBilateral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyBoxFilter.resx">
+      <DependentUpon>ApplyBoxFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyLaplacian.resx">
+      <DependentUpon>ApplyLaplacian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyMedianBlur.resx">
+      <DependentUpon>ApplyMedianBlur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyMorpho.resx">
+      <DependentUpon>ApplyMorpho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplyScharr.resx">
+      <DependentUpon>ApplyScharr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplySobel.resx">
+      <DependentUpon>ApplySobel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplySpatial.resx">
+      <DependentUpon>ApplySpatial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeanShift.resx">
+      <DependentUpon>MeanShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="filter2D.resx">
+      <DependentUpon>filter2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smooth.resx">
+      <DependentUpon>Smooth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SquareBoxFilter.resx">
+      <DependentUpon>SquareBoxFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3.jpg" />
+    <Content Include="License-LGPL.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets" Condition="Exists('..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets'))" />
+  </Target>
+</Project>
